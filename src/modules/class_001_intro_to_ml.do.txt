@@ -1,0 +1,105 @@
+!split
+======= Machine Learning intro =======
+
+
+!split
+===== Families of Machine learning =====
+FIGURE: [../figures/ML_branches, frac=0.8]
+
+
+
+!split
+===== What can we do with that? =====
+
+FIGURE: [../figures/unsupervised_python, frac=1]
+
+
+!split
+===== What about in this case? =====
+
+FIGURE: [../figures/supervised_python, frac=1]
+
+
+
+!split
+===== Unsupervised learning =====
+FIGURE: [../figures/clustering, frac=1]
+
+!split
+===== Supervised learning =====
+FIGURE: [../figures/regression, frac=1]
+
+
+!split
+===== The data decides =====
+This is why we focus so much on the data type.
+
+!bblock
+The data properties dictate what statistical model can be adopted.
+!eblock
+
+An statistical model has leverages our understanding of the data structure
+to improve its _predictions_ (inference).
+
+The numerical recipe that we used to generate the data is defined the _truth_
+
+\pause
+
+!bblock Psychology or data science?
+Most Machine learning tools are aimed to find the truth. In most cases, we are happy to not find lies.
+!eblock
+
+!split
+===== Unsupervised learning =====
+Unsupervised learning, a term that resonates with the autonomy of machine intelligence, operates on the principle of identifying patterns and structures in datasets without labelled responses.
+
+This branch of machine learning is distinguished by its lack of explicit guidance, where algorithms are tasked with uncovering hidden structures from unlabeled data.
+
+\pause
+
+The most common clustering strategies are :
+* filtering
+* clustering
+* dimensionality reduction
+* association learning
+
+!split
+===== Application of unsupervised learning =====
+It is a bit of a holy grail: a computer that finds patterns without guidance.
+(Yes, it doesn't work, most of the time)
+
+
+\pause
+
+Still, it has been shown efficient for:
+
+* Computer vision
+* Anomaly detection
+* Exploratory data analysis
+
+!bblock Main challenge
+The right result is quite undefined,
+Uncertain goal.
+!eblock
+
+
+
+!split
+===== Reinforcement learning =====
+Finally, there is a further approach.
+
+!bblock Reinforcement learning (RL)
+It aims to train an intelligent agent to take actions in a dynamic environment in order to maximise the cumulative reward.             	 
+!eblock
+
+It learns from outcomes and decides which action to take next. After each action, the algorithm receives feedback that helps it determine whether the choice it made was correct, neutral or incorrect.
+
+\pause
+
+!bblock
+It is a  self-teaching system that essentially learns by trial and error.
+!eblock
+
+It is a dependable tool for automated decision making.
+
+

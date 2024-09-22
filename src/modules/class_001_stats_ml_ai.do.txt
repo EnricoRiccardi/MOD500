@@ -1,0 +1,83 @@
+!split
+======= Statistics, Machine learning or Artificial intelligence? =======
+
+What is the main difference between the three fields?
+
+FIGURE: [../figures/ai_onions.png, frac=1]
+
+
+!split
+===== How Machine Learning Started? =====
+
+FIGURE: [../figures/what_is_ML, frac=1]
+
+
+!split
+===== Statistics =====
+!bblock
+Let's start from the definition
+!eblock 
+
+!bpop
+* Statistics (origin "description of a state/country") is the discipline that concerns the collection, organization, analysis, interpretation, and presentation of data. 
+
+* It is conventional to begin with a statistical population or a statistical model to be studied. Populations can be diverse groups of people or objects such as "all people living in a country" or "every atom composing a crystal". 
+
+* Statistics deals with every aspect of data, including the planning of data collection in terms of the design of surveys and experiments.[Wikipedia] 
+!epop
+
+
+!split
+===== Machine learning =====
+!bblock
+Definitions:
+!eblock 
+
+!bpop
+* Machine learning is a branch of artificial intelligence (AI) and computer science which focuses on the use of data and algorithms to imitate the way that humans learn, gradually improving its accuracy. [IBM]
+
+* Machine learning (ML) is a field of study in artificial intelligence concerned with the development and study of statistical algorithms that can learn from data and generalize to unseen data, and thus perform tasks without explicit instructions. [WIKI]
+
+!epop
+
+
+!split
+===== Machine learning =====
+!bblock
+One technical definition
+!eblock 
+
+!bpop
+ Machine learning is a set of computer based statistical approaches that aim to minimise the loss function to maximise inference accuracy. [Enrico, 5.2.2024]
+!epop
+
+\vspace{1em}
+
+!bpop
+_The loss function_ is the actual engine in machine learning.
+!epop
+
+\vspace{1em}
+
+!bpop
+!bblock Loss function 
+It quantifies the difference between the predicted outputs of a machine learning algorithm and the actual target values.
+!eblock
+!epop
+
+
+
+!split
+===== Artificial intelligences =====
+!bblock
+And more definitions:
+!eblock 
+
+!bpop
+* Artificial intelligence is the intelligence of machines or software, as opposed to the intelligence of humans or other animals. It is a field of study in computer science that develops and studies intelligent machines. [WIKI]
+
+* It is the science and engineering of making intelligent machines, especially intelligent computer programs. It is related to the similar task of using computers to understand human intelligence, but AI does not have to confine itself to methods that are biologically observable. [IBM]
+
+!epop
+
+

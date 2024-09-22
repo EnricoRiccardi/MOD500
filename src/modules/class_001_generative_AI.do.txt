@@ -1,0 +1,119 @@
+!split
+======= Generative AI =======
+!bblock
+A generative AI model is a type of artificial intelligence that is designed to generate new content, based on the data it has been trained on.
+!eblock
+
+It started in 1932, with the _mechanical brain_ by Georges Artsrouni that was suppoused to translate automatically between languages,
+
+Here "a nice recaps of Generative AI": "https://www.techtarget.com/searchenterpriseai/definition/generative-AI"
+and its "storyline" : "https://cdn.ttgtmedia.com/rms/onlineimages/generative_ai_evolution.png"
+
+
+!split
+===== Generative AI =====
+Key characteristics of generative AI models include:
+
+!bpop
+o   Learning from Data: They are trained on large datasets, enabling them to learn patterns, styles, or features inherent in the data.
+
+o   Generating New Content: Generative models can create new data instances. For example, a model trained on a dataset of paintings can generate new images in the style of those paintings.
+!epop
+!bpop
+
+Trained generative models are thus able to input information at a low resolution/dimension and give output with a much greater dimensionality.
+!epop
+
+!split
+===== Applications =====
+
+Here a list of possible applications:
+
+!bpop
+* Images/video: Image generation, Super-resolution, Deep fakes.
+
+* Music: noise filter, voice and music generation, voice deep fake.
+
+* Text(LLM): chatGPT, bard, Gemini, etc.
+
+* Chemistry:  DeepMind (Alphafold).
+
+* Coding (co-pilot)
+
+* Speech
+
+* Attacks and Hacking (Security testing)
+
+* Generating training sets
+
+* And many more
+
+!epop
+
+!split
+===== Science fiction? =====
+This is scary:
+
+!bpop
+o Virtual best friends
+o Medical images to show diseases consequences
+o Synthetic data for digital twins
+o Preemptive suggestions (e.g. driving)
+o Matrix
+!epop
+
+
+!split
+===== Problems (currently) =====
+New possibilities do not come with side effects.
+
+!bpop
+o Lack of transparency: how the output is generated, and why?
+o Accuracy: a lot of hallucinations
+o Bias: human biases are kept, supported and eventually increased
+o Intellectual properties (IP): who owns what is produced?
+o Cybersecutiry and frauds: mass cyber attacks can be created
+o Sustainability: massive quantity of electricity is used
+o Responsibility (who to blame?): Will AI get citizenship everywhere?
+!epop
+
+
+!split
+===== Where generative AI is ? =====
+FIGURE: [../figures/ai_onions, width=600 frac=1.0]
+
+\vspace{-1em}
+
+Image: https://iot-analytics.com
+
+
+!split
+===== Structure of generative AI =====
+FIGURE: [../figures/autoencoder_architecture, width=600 frac=0.9]
+
+\vspace{-2em}
+
+Image: https://www.rapidops.com
+
+
+!split
+===== A new field? =====
+Generative AI is actually a new evolution.
+
+It is based on Neural Network, and in comprises a set of advanced tools (numerical recepites):
+
+\pause
+
+o Generative Adversarial Networks
+o Generative Pre-trained Transformers
+o Variational Autoencoders
+o Conditional Variational Autoencoders
+o Autoencoders
+
+!split
+===== Types of generative AI =====
+It is quite an advanced technique
+
+FIGURE: [../figures/Types-of-Generative-AI-models, frac=1]
+
+Source: "Lilian Weng":"https://lilianweng.github.io/posts/2018-10-13-flow-models/"
