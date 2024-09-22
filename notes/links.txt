@@ -1,0 +1,18 @@
+Open AI report on the new model
+-------------------------------
+https://openai.com/index/learning-to-reason-with-llms/
+
+
+Comment on Decision making with LLM
+-----------------------------------
+https://towardsdatascience.com/tackle-complex-llm-decision-making-with-language-agent-tree-search-lats-gpt4-o-0bc648c46ea4
+
+Comment on Knoweldge Graphs
+---------------------------
+https://towardsdatascience.com/from-text-to-networks-the-revolutionary-impact-of-llms-on-knowledge-graphs-67551b5b76e6
+
+Paper on meta-learning
+----------------------
+https://www.mdpi.com/2076-3417/14/10/4115
+
+
