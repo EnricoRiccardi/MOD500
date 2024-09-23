@@ -68,7 +68,7 @@ More considerations:
 ===== Good examples =====
 
 * "Norwegian offshore directorate": "https://www.sodir.no/en/diskos/"
-* "Norway Statistics": "https://www.sodir.no/en/diskos/"
+* "Norway Statistics": "https://www.ssb.no/"
 * "World statistics":"https://www.statista.com/statistics/1446052/worldwide-spending-on-ai-by-industry/"
 * "Code repositories":"http://www.github.com"
 * "Data repositories":"https://journals.plos.org/plosone/s/recommended-repositories"
