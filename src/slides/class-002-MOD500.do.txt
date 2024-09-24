@@ -4,7 +4,8 @@ DATE: today
 
 FIGURE: [../figures/logo, width=100 frac=0.2]
 
-# #include "../modules/class_001_stats_ml_ai.do.txt"
-# #include "../modules/class_001_metadata.do.txt"
+# #include "../modules/class_002_intro_to_ml.do.txt"
+# #include "../modules/class_002_generative_AI.do.txt"
+
 
 
