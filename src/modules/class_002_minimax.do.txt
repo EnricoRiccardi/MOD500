@@ -1,0 +1,48 @@
+!split
+======= Machine Learning Decision Making =======
+
+
+!split
+===== How to play with a machine ? =====
+!bpop
+* If then statements
+* Look forward and evaluate
+* Look for all possibilities
+* Look ahead
+!epop
+
+
+!split
+===== Minimax =====
+Minimax aims to maximize the minimum gain (or best of worst case scenario)
+
+!bblock No math no fun
+$v_i = max \ min \ v_i (a_i , a_{-i})$
+!eblock
+
+$v_i$ : value of function of player $i$
+
+$a_i$ : action taken by player $i$
+
+$a_{-i}$ : action taken by inot $i$ player(s)
+
+$i$ : index of the player
+
+
+!split
+===== Adversary =====
+FIGURE: [../figures/game_tree, frac=1.1]
+
+
+!split
+===== Adversary =====
+Alpha-beta approach (minimax extension) 
+
+FIGURE: [../figures/game_tree, frac=1.1]
+
+
+
+
+
+
+
