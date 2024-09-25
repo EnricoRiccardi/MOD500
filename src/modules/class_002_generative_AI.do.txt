@@ -12,6 +12,11 @@ and its "storyline" : "https://cdn.ttgtmedia.com/rms/onlineimages/generative_ai_
 
 !split
 ===== Generative AI =====
+FIGURE: [../figures/ai_onions.png, frac=1]
+
+
+!split
+===== Generative AI =====
 Key characteristics of generative AI models include:
 
 !bpop
