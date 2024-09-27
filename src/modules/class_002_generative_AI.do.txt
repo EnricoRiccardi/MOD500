@@ -16,6 +16,15 @@ FIGURE: [../figures/ai_onions.png, frac=1]
 
 
 !split
+===== Structure of generative AI =====
+FIGURE: [../figures/autoencoder_architecture, width=600 frac=0.9]
+
+\vspace{-2em}
+
+Image: https://www.rapidops.com
+
+
+!split
 ===== Generative AI =====
 Key characteristics of generative AI models include:
 
