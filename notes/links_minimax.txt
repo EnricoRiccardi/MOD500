@@ -1,0 +1,15 @@
+Paper on Minimax analysis of stochastic problems
+------------------------------------------------
+https://www.tandfonline.com/doi/abs/10.1080/1055678021000034008
+
+
+Github for a chess minimax (javascipt)
+--------------------------------------
+https://jsfiddle.net/q76uzxwe/1/
+
+explanation:
+https://www.freecodecamp.org/news/simple-chess-ai-step-by-step-1d55a9266977
+
+Github for a chess minimax (python2.7)
+-------------------------------------
+https://github.com/shayanjamal/chess-ai-1

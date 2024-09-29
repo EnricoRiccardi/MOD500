@@ -1,0 +1,65 @@
+!split
+===== Minimax =====
+
+Example on the board
+
+!split
+===== Minimax (alpha beta) =====
+
+Example on the board
+
+
+
+!split
+===== Chess =====
+FIGURE: [../figures/chess, frac=1.0]
+
+!split
+===== Setting up a ML/AI algorithm =====
+
+Propose a:
+!bpop
+* unsupervised
+* supervised
+* refinrocement learning
+!epop
+
+!split
+===== Evaluation functions =====
+
+Let's assign some points
+
+FIGURE: [../figures/chess_points_1, frac=0.5]
+
+!split
+===== Evaluation functions =====
+What happens if you don't know the rules?
+!bpop
+* Clarity
+
+* The more accurate the better
+
+* Value of information
+!epop
+
+!split 
+===== Assigned probabilities =====
+FIGURE: [../figures/decision_tree, frac=0.9]
+
+\pause 
+
+What happens when the splits in a tree are not deterministic, as in minimax?
+
+How do you set up a decision oppositor?
+
+
+
+!split
+===== Concept maps (Sept 2024) =====
+https://www.mymap.ai/concept-map-maker
+
+https://www.heuristi.ca/
+
+https://chatgpt.com/  (AI Diagram Designer)
+
+
