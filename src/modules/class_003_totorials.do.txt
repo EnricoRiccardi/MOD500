@@ -21,7 +21,7 @@ Propose a:
 !bpop
 * unsupervised
 * supervised
-* refinrocement learning
+* reinforcement learning
 !epop
 
 !split

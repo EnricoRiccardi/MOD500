@@ -1,0 +1,115 @@
+!split
+======= Information Theory =======
+
+!split
+===== Probability distribution =====
+
+!bblock 
+Amount of uncertainty
+!eblock
+
+FIGURE: [../figures/prob_distribution, frac=1]
+
+ 
+
+!split
+===== Task assignment =====
+
+Code a discrete probability distribution in Python
+
+Calculate the Mean and Standard Deviation
+
+How to get an experiment out of this distribution? 
+
+
+
+!split
+===== How to relate a distribution to information? =====
+
+First, the origins:
+
+!bpop
+* Daddy: Claude Shannon (1940)
+
+
+* His initial work has been done on signal transmission.
+
+
+* It uses Entropy as key measurement of information uncertainity. 
+!epop
+
+
+
+
+!split
+===== Why is it important/userfull ? =====
+
+It is an interface between data and decisions. 
+
+\pause 
+
+!bblock A question to sum up the idea
+Does more data bring value?  
+!eblock
+
+
+\pause
+
+It has permitted the advances of several fields:
+
+cryptography, neurobiology, signal processing, linguistics, bioinformatics, statistical physics, black holes, quantum computing, information retrieval, intelligence gathering, plagiarism detection, pattern recognition, anomaly detection, etc
+
+\pause 
+
+zip files, phones, internet! 
+
+
+
+!split
+===== Entropy of an information source =====
+
+$ H = - \sum_i(p_i)log(p_i) $
+
+$H_X$ of a discrete random variable X is a measure of the amount of uncertainty associated with the value of $X$ when only its distribution is known
+
+\pause
+
+!bblock What is $p_i$?
+It is a numerical descriptions of how likely an event is to occur 
+!eblock
+
+\pause 
+
+!bblock {\color{red}Do not mix the concepts!}
+Assigned probability and computed probability are different
+!eblock
+
+!split
+===== Task assignment =====
+
+Code a discrete probability distribution in Python
+
+Calculate the Mean and Standard Deviation
+
+How to get an experiment out of this distribution? 
+
+{\color{red} Calculate Shannon's Entropy as a function of the number of experiments}
+
+
+!split
+===== Comparing information =====
+
+
+
+!split 
+===== Kullback–Leibler divergence (information gain) =====
+
+$ D_{KL} =  \sum_i(p_i)log(\frac{p_i}{q_i}) $
+
+
+
+
+
+
+
+
