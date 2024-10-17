@@ -1,4 +1,8 @@
 !split
+===== A bias recap from last classes =====
+FIGURE: [../figures/ai, frac=0.8]
+
+!split
 ======= Metrics and distributions =======
 
 !split
@@ -174,15 +178,11 @@ $ D_{KL} =  \sum_i(p_i)log(\frac{p_i}{q_i}) $
 
 !split
 ===== Task assignment [3] =====
-Code a discrete probability distribution in Python
-
-Calculate the Mean and Standard Deviation
-
-How to get an experiment out of this distribution? 
-
-Calculate Shannon's Entropy as a function of the number of experiments
+Dowload a discrete probability distribution
 
 {\color{red} Calculate Kullback–Leibler divergence}
+
+{\color{blue} Find the distribution that minimise K-L divergence}
 
 
 
