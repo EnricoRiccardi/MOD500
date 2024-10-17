@@ -1,16 +1,53 @@
 !split
-======= Information Theory =======
+======= Metrics and distributions =======
 
 !split
 ===== Probability distribution =====
 
-!bblock 
+!bblock A metric is needed
 Amount of uncertainty
 !eblock
 
 FIGURE: [../figures/prob_distribution, frac=1]
 
- 
+!split
+===== Metrics =====
+
+!bblock Triangle inequality
+
+Considering a vectors in an N-dimensional space, to be a \alert{distance} it must satisfy the \alert{triangle inequality}:
+
+!eblock
+
+!bt
+\begin{displaymath}
+d_{ij} + d_{im} \geq d_{jm}
+\end{displaymath}
+!et
+
+If also $d_{jj}=0$, if $i=j$ and $d_{jj}-d_{ii}=0$, then we call it a {\em metric}.
+
+FIGURE: [../figures/triangleineq.eps, frac=0.3]
+
+!split
+===== Metris example =====
+
+!bblock Common metrics:
+* Counting
+* Euclidean
+!eblock
+
+!bt
+\begin{displaymath}
+d_{ij}^{(E)} = \left[ \sum_{k=1}^{N} (x_{ik} - x_{jk})^2 \right]^{\frac{1}{2}}
+\end{displaymath}
+!et
+
+\pause 
+
+!bblock
+Categorical variables do not necessarily satisfy these relations.
+!eblock
 
 !split
 ===== Task assignment =====
@@ -22,9 +59,13 @@ Calculate the Mean and Standard Deviation
 How to get an experiment out of this distribution? 
 
 
+!split
+======= Information Theory =======
+
 
 !split
 ===== How to relate a distribution to information? =====
+
 
 First, the origins:
 
@@ -35,14 +76,14 @@ First, the origins:
 * His initial work has been done on signal transmission.
 
 
-* It uses Entropy as key measurement of information uncertainity. 
+* It uses Entropy as key measurement of information uncertainty. 
 !epop
 
 
 
 
 !split
-===== Why is it important/userfull ? =====
+===== How Entropy can alter a decisions? =====
 
 It is an interface between data and decisions. 
 
@@ -68,7 +109,7 @@ zip files, phones, internet!
 !split
 ===== Entropy of an information source =====
 
-$ H = - \sum_i(p_i)log(p_i) $
+$ H_X = - \sum_i(p_i)log(p_i) $
 
 $H_X$ of a discrete random variable X is a measure of the amount of uncertainty associated with the value of $X$ when only its distribution is known
 
@@ -84,8 +125,21 @@ It is a numerical descriptions of how likely an event is to occur
 Assigned probability and computed probability are different
 !eblock
 
+
 !split
-===== Task assignment =====
+===== Shannon's entropy shape =====
+
+!bblock
+$ H_X = - \sum_i(p_i)log(p_i) $
+
+!eblock
+
+
+FIGURE: [../figures/Shannon-entropy-function, frac=0.8]
+
+
+!split
+===== Task assignment [2] =====
 
 Code a discrete probability distribution in Python
 
@@ -97,14 +151,38 @@ How to get an experiment out of this distribution?
 
 
 !split
-===== Comparing information =====
+======= Comparing information =======
+A distribution can be the sum of multiple distributions
 
+
+FIGURE: [../figures/multdist, frac=0.7]
 
 
 !split 
 ===== Kullback–Leibler divergence (information gain) =====
 
+!bblock
+How to compare multiple information sources?
+!eblock
+
 $ D_{KL} =  \sum_i(p_i)log(\frac{p_i}{q_i}) $
+
+\pause
+
+* It is a divergence, as it is asymmetric
+* It is NOT a metric
+
+!split
+===== Task assignment [3] =====
+Code a discrete probability distribution in Python
+
+Calculate the Mean and Standard Deviation
+
+How to get an experiment out of this distribution? 
+
+Calculate Shannon's Entropy as a function of the number of experiments
+
+{\color{red} Calculate Kullback–Leibler divergence}
 
 
 
