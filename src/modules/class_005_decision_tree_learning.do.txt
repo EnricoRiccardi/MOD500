@@ -1,0 +1,65 @@
+!split
+======= Recaps =======
+FIGURE: [../figures/ai, frac=0.8]
+
+!split
+===== Shannon's entropy shape =====
+
+!bblock
+$ H_X = - \sum_i(p_i)log(p_i) $
+
+!eblock
+
+FIGURE: [../figures/Shannon-entropy-function, frac=0.8]
+
+!split
+===== Task assignment [2] =====
+
+Code a discrete probability distribution in Python
+
+Calculate the Mean and Standard Deviation
+
+How to get an experiment out of this distribution? 
+
+{\color{red} Calculate Shannon's Entropy as a function of the number of experiments}
+
+
+!split
+======= Comparing information =======
+A distribution can be the sum of multiple distributions
+
+
+FIGURE: [../figures/multdist, frac=0.7]
+
+
+!split 
+===== Kullback–Leibler divergence (information gain) =====
+
+!bblock
+How to compare multiple information sources?
+!eblock
+
+$ D_{KL} =  \sum_i(p_i)log(\frac{p_i}{q_i}) $
+
+\pause
+
+* It is a divergence, as it is asymmetric
+* It is NOT a metric
+
+!split
+===== Task assignment [3] =====
+Dowload a discrete probability distribution
+
+{\color{red} Calculate Kullback–Leibler divergence}
+
+{\color{blue} Find the distribution that minimise K-L divergence}
+
+
+
+!split
+======= Decision trees learning =======
+
+
+
+
+
