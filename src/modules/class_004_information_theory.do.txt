@@ -29,7 +29,7 @@ d_{ij} + d_{im} \geq d_{jm}
 \end{displaymath}
 !et
 
-If also $d_{jj}=0$, if $i=j$ and $d_{jj}-d_{ii}=0$, then we call it a {\em metric}.
+If also $d_{jj}=0$, if $d_{ij}-d_{ji}=0$, then we call it a {\em metric}.
 
 FIGURE: [../figures/triangleineq.eps, frac=0.3]
 
@@ -178,7 +178,7 @@ $ D_{KL} =  \sum_i(p_i)log(\frac{p_i}{q_i}) $
 
 !split
 ===== Task assignment [3] =====
-Dowload a discrete probability distribution
+Compare the initial discrete probability distribution with the appriximate ones computed as function of the number of experiments.
 
 {\color{red} Calculate Kullback–Leibler divergence}
 
