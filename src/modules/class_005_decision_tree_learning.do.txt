@@ -46,20 +46,112 @@ $ D_{KL} =  \sum_i(p_i)log(\frac{p_i}{q_i}) $
 * It is a divergence, as it is asymmetric
 * It is NOT a metric
 
+
 !split
 ===== Task assignment [3] =====
-Dowload a discrete probability distribution
+Compare the initial discrete probability distribution with the appriximate ones computed as function of the number of experiments.
 
-{\color{red} Calculate Kullback–Leibler divergence}
+{\color{red} Calculate Kullback–Leibler divergence for different number of experiments}
 
 {\color{blue} Find the distribution that minimise K-L divergence}
-
 
 
 !split
 ======= Decision trees learning =======
 
+!bblock Terminology confusion: Decision trees
+2 different domains use the same name for 2 different methods
+!eblock
+
+\pause
+
+!bblock
+{\color{red} We here use now the Machine Learning definition}
+!eblock
+
+\pause
+
+Two types of decision tree (learning)
+!bpop
+
+* Classification trees (our focus here)
+* Regression trees
+
+!epop
 
 
+!split
+===== Decision trees learning =====
+The goal is to create a model that predicts the value of a target variable by learning simple decision rules inferred from the data features
+
+FIGURE: [../figures/surf, frac=0.41]
+
+
+!split
+===== Decision trees =====
+New? Well, the name came from...
+
+\pause
+William Belson, in 1959
+
+\pause 
+BUT the basic idea is even older (Aristotle's book on Categories)
+
+FIGURE: [../figures/aristotele, frac=0.4]
+
+
+!split
+===== Decision trees =====
+It is a simple model for supervised classification 
+
+Each decision nodes performes a Boolean test (binary split version)
+
+They are build out of DATA!
+
+At each split, we perform the slip that reduce entropy the most.
+
+\pause 
+
+!bblock REMINDER
+We need to provide a label!
+!eblock
+
+
+!split 
+===== Decision tree outcome =====
+
+FIGURE: [../figures/decision_tree_effect, frac=1]
+
+
+
+!split
+===== Decision trees =====
+!bblock Pseudo-code 
+!bpop
+* Compute the entropy of each feature (myopic approach)
+* Pick the feature with the maximum entropy
+* For each value of the selected feature, compute the entropy of the new population
+* Compute the Information Gain by splitting the dataset
+* Repeat for the number of desired splits
+!epop
+!eblock
+
+
+!split
+===== Decision trees in Python =====
+!bblock
+
+@@@CODE ../code/decision_tree.py
+
+!eblock
+
+
+!split
+===== Tutorial [4] =====
+Generate (at least) 4 different probability distributions
+
+Make a meaningful label, and then make a decision tree from the data generated
+
+(Use the given template to sort out Python programming part if you need)
 
 

@@ -180,7 +180,7 @@ $ D_{KL} =  \sum_i(p_i)log(\frac{p_i}{q_i}) $
 ===== Task assignment [3] =====
 Compare the initial discrete probability distribution with the appriximate ones computed as function of the number of experiments.
 
-{\color{red} Calculate Kullback–Leibler divergence}
+{\color{red} Calculate Kullback–Leibler divergence for different number of experiments}
 
 {\color{blue} Find the distribution that minimise K-L divergence}
 

@@ -1,5 +1,6 @@
 """ 
-Solution for MOD500 information entropy tutorial
+Solution for MOD500 information entropy tutorial: Shannon's entropy
+
 """
 
 import numpy as np
@@ -11,7 +12,7 @@ def calculate_entropy(p_distr):
 
     Input
     -----
-    p : np.array
+    p_distr : np.array
         the discrete probability distribution
 
     Output
@@ -23,17 +24,19 @@ def calculate_entropy(p_distr):
     return entropy
 
 
-def create_experiments(n_points, shape='gaussian'):
+def create_experiments(n_exp, shape='gaussian', param=5):
     """Create experiments according to a probability distribution
     
     Input
     -----
-    n_points : integer
-        the number of points of the probability distribution
-   
+    n_exp : integer
+        the number of experiments
     shape : string, optional
         the type of distribution, 
-        supported types: gaussian, poisson, geometrici, flat
+        supported types: gaussian, poisson, geometric, flat
+    param : float, optional
+        a parameter to alter the outcome distrbution,
+        this is a very good example of lazy coding
 
     Output
     ------
@@ -41,16 +44,16 @@ def create_experiments(n_points, shape='gaussian'):
         probability distribuiton
     """
     if shape == 'gaussian':
-        p = np.random.normal(loc=5, scale=0.5, size=n_points)
+        p = np.random.normal(loc=param, scale=0.5, size=n_exp)
 
     elif shape == 'poisson':
-        p = np.random.poisson(5, size=n_points)
+        p = np.random.poisson(param, size=n_exp)
 
     elif shape == 'geometric':
-        p = np.random.geometric(p=0.35, size=n_points)
+        p = np.random.geometric(p=param, size=n_exp)
 
     elif shape == 'flat':
-        p = np.random.rand(n_points)
+        p = np.random.rand(n_exp)
 
     else:
         raise TypeError(f'Distribution type {shape}  not supported')
@@ -110,12 +113,17 @@ def plotter(x, y=None, mode='hist'):
     plt.show()
 
 
-# Here the main code
-npoints = 1000
-h = []
-for i in range(npoints):
-    experiments = create_experiments(i)
-    prob = create_prob_distribution(experiments)
-    h.append(calculate_entropy(prob))
+def main():
+    npoints = 1000
+    h = []
+    for i in range(npoints):
+        experiments = create_experiments(i)
+        prob = create_prob_distribution(experiments)
+        h.append(calculate_entropy(prob))
     
-plotter(np.arange(npoints), h, mode='xy')
+    plotter(np.arange(npoints), h, mode='xy')
+
+
+if __name__ == "__main__":
+    main()
+
