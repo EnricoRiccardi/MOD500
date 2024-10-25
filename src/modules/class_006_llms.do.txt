@@ -1,0 +1,156 @@
+!split
+======= Recap =======
+
+!split
+===== Decision trees learning =====
+It is a simple model for supervised classification 
+
+Each decision nodes performs a Boolean test (binary split version)
+
+They are build out of DATA!
+
+At each split, we perform the slip that reduce entropy the most.
+
+!bblock REMINDER
+We need to provide a label!
+!eblock
+
+
+!split 
+===== Decision tree outcome =====
+
+FIGURE: [../figures/decision_tree_effect, frac=1]
+
+
+
+!split
+===== Decision trees =====
+!bblock Pseudo-code 
+* Compute the entropy of each feature (myopic approach)
+* Pick the feature with the maximum entropy
+* For each value of the selected feature, compute the entropy of the new population
+* Compute the Information Gain by splitting the dataset
+* Repeat for the number of desired splits
+!eblock
+
+
+!split
+===== Decision trees in Python =====
+!bblock
+
+@@@CODE ../code/decision_tree.py
+
+!eblock
+
+
+!split
+===== Tutorial [4] =====
+Generate (at least) 4 different probability distributions
+
+Make a meaningful label, and then make a decision tree from the data generated
+
+(Use the given template to sort out Python programming part if you need)
+
+
+!split
+======= Language models =======
+
+A language model is a probability distribution over sequences of words [1].
+
+{\tiny Jurafsky and Martin: Speech and Language Processing, 2023}
+
+\pause 
+
+!bblock
+P(Twinkle twinkle little star, how I wonder what you are.) = 0.99
+P(Twinkle twinkle little moon, how I wonder what you are.) = 0.75
+P(Twinkle twinkle little star, how I what you are.) = 0.3
+P(Are you what I wonder I how star, little twinkle, twinkle.) = 0.02
+!eblock
+
+!split
+===== Vector representations =====
+
+!bblock Vector representation 
+!bpop
+* tokenization
+* word2vec
+!epop
+!eblock
+
+FIGURE: [../figures/cherrypick, frac=1.0]
+
+
+!split
+===== Sparse Vector representations =====
+
+FIGURE: [../figures/cherrypick, frac=1.0]
+
+Table of co-occurrences of the words in Wikipedia
+
+Cherry picking is the act of pointing to individual cases that seem to confirm a particular position while ignoring a significant portion of similar cases or data that may contradict that position.
+
+!bpop
+
+* One dimension for each word $->$ long
+* Many values are 0 $->$ sparse
+
+!epop
+
+!split
+===== Vector similarity =====
+
+!bblock Metric alert
+How close are two words? 
+!eblock
+
+
+FIGURE: [../figures/dimensions, frac=1.0]
+
+
+!split
+===== Transformers =====
+
+!bpop
+* A neural network designed to explicitly take into account the long-range dependencies between words
+
+* Sequence-to-sequence models that transform an input vectors (x1, ..., xn) to some output vectors (y1, ..., yn) of the same length
+
+* Transformers are made up of stacks of transformer blocks.
+
+* Attention allows to directly extract and use information from arbitrarily long contexts
+!epop
+
+!split 
+===== Encode \& decode =====
+\pause
+
+!bblock Encoder model
+From an input sequence to a contextualised representation of each input element
+!eblock
+
+\pause
+
+!bblock Decoder model
+From contextualised representations to a task-specific output sequence
+!eblock
+
+\pause
+
+FIGURE: [../figures/autoencoder_architecture, frac=0.5]
+
+
+!split 
+======= LLMs =======
+
+FIGURE: [../figures/llms_map, frac=0.8]
+
+
+!split
+===== Learn more! =====
+* "Speech and Language Processing, Chapter 9 (Transformers) and 10 (Large Language Models), Dan Jurafsky and James H. Martin 17": "https://web.stanford.edu/~jurafsky/slp3/"
+
+* "The Illustrated Transformer, Jay Alammar": "https://jalammar.github.io/illustrated-transformer/"
+
+
+
