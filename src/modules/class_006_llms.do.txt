@@ -59,12 +59,23 @@ A language model is a probability distribution over sequences of words [1].
 
 {\tiny Jurafsky and Martin: Speech and Language Processing, 2023}
 
+\pause
+
+!bt
+\begin{equation*}
+p(x_1, ... , x_n) = \prod^{n}_{i=1} p(x_i|x{<i})
+\end{equation*}
+!et
+
 \pause 
 
 !bblock
 P(Twinkle twinkle little star, how I wonder what you are.) = 0.99
+
 P(Twinkle twinkle little moon, how I wonder what you are.) = 0.75
+
 P(Twinkle twinkle little star, how I what you are.) = 0.3
+
 P(Are you what I wonder I how star, little twinkle, twinkle.) = 0.02
 !eblock
 
@@ -78,7 +89,7 @@ P(Are you what I wonder I how star, little twinkle, twinkle.) = 0.02
 !epop
 !eblock
 
-FIGURE: [../figures/cherrypick, frac=1.0]
+FIGURE: [../figures/words, frac=1.0]
 
 
 !split
@@ -88,14 +99,19 @@ FIGURE: [../figures/cherrypick, frac=1.0]
 
 Table of co-occurrences of the words in Wikipedia
 
-Cherry picking is the act of pointing to individual cases that seem to confirm a particular position while ignoring a significant portion of similar cases or data that may contradict that position.
-
 !bpop
 
 * One dimension for each word $->$ long
 * Many values are 0 $->$ sparse
 
 !epop
+
+\pause
+
+!bblock Cherry picking 
+pointing to individual cases that seem to confirm a particular position while ignoring a significant portion of similar cases or data that may contradict that position.
+!eblock
+
 
 !split
 ===== Vector similarity =====
@@ -109,12 +125,26 @@ FIGURE: [../figures/dimensions, frac=1.0]
 
 
 !split
+===== Cosine similarity =====
+A popular metric to measure the similarity between sentences
+
+FIGURE: [../figures/cosine_sim, frac=0.6]
+
+\pause 
+
+!bt
+\begin{equation*}
+cosine similarity = S_C(A,B) = cos(\theta) = \frac{A \cdot B }{|| A || \ ||B||}
+\end{equation*}
+!et
+
+!split
 ===== Transformers =====
 
 !bpop
 * A neural network designed to explicitly take into account the long-range dependencies between words
 
-* Sequence-to-sequence models that transform an input vectors (x1, ..., xn) to some output vectors (y1, ..., yn) of the same length
+* Sequence-to-sequence models that transform an input vectors ($x_1$, ..., $x_n$) to some output vectors ($y_1$, ..., $y_n$) of the same length
 
 * Transformers are made up of stacks of transformer blocks.
 
@@ -144,6 +174,33 @@ FIGURE: [../figures/autoencoder_architecture, frac=0.5]
 ======= LLMs =======
 
 FIGURE: [../figures/llms_map, frac=0.8]
+
+
+!split
+===== RAGs =====
+!bblock Reducing hallucinations 
+Retrieval Augmented Generation
+!eblock
+
+\pause
+
+!bt
+\begin{equation*}
+p(x_1, ... , x_n) = \prod^{n}_{i=1} p(x_i|x{<i} ; [Q:])
+\end{equation*}
+!et
+
+where [Q:] is additional information
+
+
+\pause
+
+Combining different information sources with different (assumed) reliability
+
+!split
+===== RAGS =====
+
+FIGURE: [../figures/rag2, frac=1] 
 
 
 !split
