@@ -74,9 +74,8 @@ P(Twinkle twinkle little star, how I wonder what you are.) = 0.99
 
 P(Twinkle twinkle little moon, how I wonder what you are.) = 0.75
 
-P(Twinkle twinkle little star, how I what you are.) = 0.3
+P(Twinkle twinkle little thing, how I wonder what you are.) = 0.3
 
-P(Are you what I wonder I how star, little twinkle, twinkle.) = 0.02
 !eblock
 
 !split
