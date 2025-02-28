@@ -1,0 +1,13 @@
+TITLE: MOD500 Decision Analysis with Artificial Intelligence Support
+AUTHOR: Enrico Riccardi {copyright|CC BY} Email:enrico.riccardi@uis.no at Department of Energy Resources, University of Stavanger (UiS).
+DATE: today
+
+<%
+FG = "../../../Teaching/Figures/500" 
+FGC = "../../../Teaching/Figures/common" 
+%>
+
+FIGURE: [${FGC}/logo, width=100 frac=0.2]
+
+# #include "../modules/class_0_intro.do.txt"
+

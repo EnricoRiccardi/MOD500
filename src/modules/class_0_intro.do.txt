@@ -1,0 +1,423 @@
+!split
+======= Personal Intro =======
+
+!split
+===== Let me first introduce US =====
+!bslidecell 00
+Enrico Riccardi
+
+email: enrico.riccardi@uis.no
+!eslidecell
+!bslidecell 01
+FIGURE: [${FGC}/enrico_riccardi, frac=0.22]
+!eslidecell
+
+
+
+
+!bslidecell 10
+Pål Østebø Andersen
+
+email: pal.andersen@uis.no
+!eslidecell
+!bslidecell 11
+FIGURE: [${FGC}/pal, frac=0.22]
+!eslidecell
+
+
+
+!bslidecell 20
+Remus Gabriel Hanea
+
+email: rhane@equinor.com
+!eslidecell
+!bslidecell 21
+FIGURE: [${FGC}/remus_gabriel_hanea, frac=0.22]
+!eslidecell
+
+
+
+!split
+===== Let me first introduce myself =====
+!bslidecell 00
+Enrico Riccardi
+email: enrico.riccardi@uis.no
+office: KE-E-301B
+!eslidecell
+
+!bpop
+=== Before to be here... ===
+* Chemical engineer graduated from the Politecnico di Torino
+* PhD at M$\&S$T university of Rolla, Missouri, USA
+* Post Doc at TUD Darmstadt, Germany
+* Researcher at NTNU, Trondheim, Norway
+* Post Doc UiO, Oslo, Norway
+* Assoc. Prof. at Uis, Stavanger, Norway
+
+
+!bslidecell 01
+FIGURE: [${FGC}/torino, width=200 frac=1.0]
+!eslidecell
+
+!epop
+
+!split
+===== Course objectives =====
+!bblock
+Ability to 
+!eblock
+
+\pause
+
+* Understand the key factors involved in making good decisions.
+* Evaluate the challenges we face when making decisions.
+* Make better decisions in your personal and professional life.
+* Communicate your choices and recommendations clearly.
+* Recognize and account for the human biases and errors that most often affect decision making.
+* Develop and use models, tools, and mental frameworks to deal effectively with uncertainty
+* Use AI to support your work
+* Frame the decisions to take in a matematical contest
+* Optmize your decision strategy.
+
+!split
+===== Metalearning =====
+FIGURE: [${FGC}/piramid]
+
+!split
+===== Metalearning =====
+* Pedagogic empiricism teaches us that good learning happens in social contexts where the students are actively participating in the classroom dialogue
+\pause
+* In general, the number of questions, and the dialogue in general, drops significantly when lectures are recorded
+\pause
+* Streaming tends to lead to empty classrooms and higher failure rate.
+
+
+
+!split
+===== Teaching method =====
+_!Active Learning!_
+
+!bpop
+* There will be a combination of lectures and tutorials.
+
+* Tutorial and hands-on will be presented during the course.
+
+* Study groups are strongly encouraged.
+
+* In class discussions are encouraged at any stage.
+
+* Flip classroom approach: problem first (when possible).
+
+* Feedback expected from you!
+
+* Note: each teacher, even if coordinated, will have a different approach/expectations.
+!epop
+
+
+!split
+===== Python =====
+The tutorials and hands-on will be mostly based on python.
+
+!bpop
+* An introduction to python will be provided during the course. Yet, this is not a Python programming course!
+
+* You are _strogly advised_ to construct your own Git repository (and to keep it in order).
+
+* Group projects will have different roles.
+!epop
+
+\pause
+
+!split
+===== A personal considerations on generative AI =====
+!bblock
+With great power comes great responsibility (Spider-Man)
+!eblock
+
+LLMs can and shall be used. As their development is surging in the last years, their help
+in writing code and reports is undeniable. Students shall learn how to master these tools.
+Yet, while their usage is encouraged, the risk of excessively rely on them _DO_ hinder learning.
+
+\pause
+
+If you want to be a student (i.e. whom is learning), you are encouraged to take the responsibility in delivering original
+output.
+
+
+!split
+======= Intro to MOD500 =======
+
+
+!split
+===== Why are we here? Why this course? =====
+* Decisions are the hinge. What influences your decisions has value.
+
+!bpop
+!bblock
+* Better results come from better decisions. \\
+	color{blue}{*STATISTICAL argument*}
+
+* Machine learning - Artificial Intelligence can be a useful color{red}{ONLY} when it helps making better decisions.
+!eblock
+!epop
+
+!split
+===== Decisions, decisions, decisions... =====
+
+!bblock Life lesson?!
+Life is a sum of all your choices (Albert Camus)
+!eblock
+
+\vspace{2em}
+
+!bpop
+
+!bslidecell 00
+The only way you can purposefully influence your life, your family, your
+organization, your country or your world is through color{red}{the decisions you make}.
+!eslidecell
+
+!bslidecell 01
+FIGURE: [${FGC}/decisions, width=200 frac=0.8]
+!eslidecell
+
+!epop
+
+ 
+
+
+!split
+===== Uncertainty is fed to decisions =====
+
+!bpop
+
+FIGURE: [${FGC}/Decisionquality, width=200 frac=0.3]
+
+\vspace{-1em}
+
+* In this course we will learn to use data and models (ML) to make better decisions.
+* Each application will be a mere exercise of the concepts we will introduce here.
+
+\vspace{-1em}
+
+!bblock Do not try this at home!
+* color{red}{Please Do not use a technical approach for love matters.}
+!eblock
+
+!epop
+
+
+!split
+===== Uncertainty =====
+It is present in every stage of life (at each decision).
+
+You would thus need to:
+!bpop
+o Rationalize uncertainty (qualify)
+o Quantify uncertainty
+o Make decisions under uncertainty
+o Operate under uncertainty
+
+!epop
+
+!split
+===== Uncertainty or Probability? =====
+
+Our aim here is to provide good guidance on how to link data, models and output to value creation.
+
+!bpop
+* First we need to understand uncertainty and probability, and the difference between the two.
+
+!bblock
+* Spoiler: Probability is the language of uncertainty!
+!eblock
+
+\vspace{1em}
+
+* We will analyse, quantify and structure models as a function of uncertainty.
+
+* Clarity of language in probability is one of the hallmarks of decision analysis
+!epop
+
+
+
+!split
+===== Data properties =====
+
+* All starts from data: what are data-properties?
+
+!bpop
+* Are there such things as good data and bad data?
+
+!bblock Life lesson (or exam question, same thing ;) )
+* Data color{red}{ DO NOT always} have value.
+!eblock
+
+\vspace{1em}
+* TRASH in TRASH out
+!epop
+
+
+
+!split
+===== Quantifying uncertainty =====
+!bblock
+On the data sources side
+!eblock
+* Confidence intervals
+!bpop
+* Relevance
+* Significance
+* Correlation
+* Causation
+* Data Filters
+* Biases identification
+!epop
+
+!split
+======= Modeling  =======
+
+!split
+===== Quantifying uncertainty =====
+!bblock
+On the modelling side
+!eblock
+!bpop
+* Regression
+* Principal components
+* Decision tree (random forests)
+* Neural network
+* Clustering
+* Performance metrics
+!epop
+
+
+!split
+===== Hard and soft modeling =====
+
+Models allow us to predict ’the future’, or describe the past and
+present (what is the present...?)
+
+\vspace{1em}
+
+!bpop
+!bblock Last life lesson for today
+Models are always wrong, but some are useful. (George Box)
+!eblock
+!epop
+
+\vspace{2em}
+
+!bpop
+=== Three main families: ===
+o Hard models (physics)
+o Soft models (statistic)
+o Machine learning (Nice! But what is it?)
+!epop
+
+!split
+===== Hard modeling =====
+!bpop
+
+* Based on an accurate physical description of the system and mathematical modeling (e.g. differential equations). Hard models are often deterministic.
+
+* Hard modeling methods usually use optimization methods to find out the best values for the parameters of the model.
+
+* Hard modeling is preferable in laboratory experiments, where all the variables are controlled and the physicochemical nature of the dynamic model is known and can be fully described using a known mathematical model.
+
+* Hard modeling, if successful, usually gives better understanding of a system and better extrapolations. Wrong assumptions often lead to non-sense results.
+!epop
+
+!split
+===== Soft modeling =====
+
+!bpop
+* Soft-modeling describes systems without the need of an *a priori* physical or (bio)chemical model postulation. They are _data driven_ models.
+
+* Soft models are much easier to make than hard models.
+
+* Soft modeling can be used to understand complex relationships.
+
+* Soft modeling needs (much) more data than hard-modeling.
+
+* Soft models have a poor extrapolating capabilities (compared with hard-modeling)
+!epop
+
+
+!split
+===== How to create hard models? =====
+After understanding the problem to be solved we need to:
+
+o Link mathematics to physics.
+o Define boundary conditions and constitutive equations.
+o Make tons of assumptions.
+o Solve the constitutive equation in space and time.
+o Check solution stability and sensitivity analysis.
+o A long set of judicious approximations have to be taken.
+o It is hard (but we are engineers!).
+o Get quite some money for the awesome job.
+
+
+!split
+===== How to create soft models? =====
+
+After understanding the general problem to be solved we need to:
+
+* Determine a suitable _numerical description_ .
+* Choose a suitable _model_ to which parameters are fitted.
+* Train, test, validate the model.
+* Perform _data analysis_ with chosen method(s).
+* Link predictions with expectations.
+
+!split
+===== Hard models vs Soft models =====
+!bslidecell 00
+!bblock Requirements
+!eblock
+!eslidecell
+
+!bslidecell 10
+!bblock
+Deterministic:
+!eblock
+* physics and expert knowledge
+* integration of various information sources
+* very complicated
+!eslidecell
+
+!bslidecell 11
+!bblock
+Statistical:
+!eblock
+* quick
+* uncertainty assessment
+* data driven approach
+* physics can be included
+* stochastic modeling
+!eslidecell
+
+!split
+===== Hard models vs Soft models =====
+
+!bslidecell 00
+!bblock Behaviour
+!eblock
+!eslidecell
+
+!bslidecell 10
+!bblock
+Deterministic:
+!eblock
+* predictable
+* defined error
+!eslidecell
+
+!bslidecell 11
+!bblock
+Statistical:
+!eblock
+* outcome uncertainty
+* undefined error
+* sampling resolution issues
+!eslidecell
+
